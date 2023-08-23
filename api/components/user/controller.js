@@ -6,7 +6,7 @@ const TABLE = "user";
 module.exports = (injectedStore) => {
   const store = injectedStore;
   if (!store) {
-    store = require("./../../../store/dummy");
+    store = require("../../../db/dummy");
   }
   const list = () => {
     return store.list(TABLE);

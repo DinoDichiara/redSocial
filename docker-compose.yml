@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:latest
+    container_name: mysql-server
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: MiServer123
+      MYSQL_USER: dinodichiara
+      MYSQL_PASSWORD: MiServer123
+      MYSQL_DATABASE: redsocial
+    ports:
+      - 3306:3306
+    volumes:
+      - ./mysql-data:/var/lib/mysql
+      

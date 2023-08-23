@@ -1,4 +1,4 @@
-const store = require("../../../store/dummy");
+const store = require("../../../db/mysql");
 
 const ctrl = require("./controller");
 
