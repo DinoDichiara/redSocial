@@ -23,6 +23,9 @@ const check = {
       throw error("You cant action this option", 401);
     }
   },
+  logged: (req, owner) => {
+    const decoded = decodeHeader(req);
+  },
 };
 
 const getToken = (auth) => {
