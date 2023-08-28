@@ -1,3 +1,4 @@
+require('dotenv').config();
 const remote = require('./remote')
 const config = require('../config/config')
 
