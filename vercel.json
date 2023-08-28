@@ -12,6 +12,16 @@
     "REMOTE_DB": "false",
     "API_PORT": "3000"
   },
+  "builds": [
+    {
+      "src": "/api/index.js(.*)",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "/post/index-post.js(.*)",
+      "use": "@vercel/node"
+    }
+  ],
   "routes": [
     {
       "src": "/api/auth(.*)",
@@ -22,7 +32,7 @@
       "dest": "/api/index.js"
     },
     {
-      "src": "/api/post(.*)",
+      "src": "/post(.*)",
       "dest": "/post/index-post.js"
     }
   ]
