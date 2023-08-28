@@ -46,9 +46,6 @@ const insert = (table, data) => {
     });
   });
 };
-// const upsert = (table, data) =>{
-//   return insert(table, data)
-//   };
 const update = (table, data) => {
   return new Promise((resolve, reject) => {
     connection.query(
