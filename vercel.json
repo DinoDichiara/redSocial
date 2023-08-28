@@ -2,11 +2,11 @@
   "version": 2,
   "routes": [
     {
-      "src": "/api/auth(.*)",
+      "src": "/api/components/auth(.*)",
       "dest": "/api/index.js"
     },
     {
-      "src": "/api/user(.*)",
+      "src": "/api/components/user(.*)",
       "dest": "/api/index.js"
     },
     {
