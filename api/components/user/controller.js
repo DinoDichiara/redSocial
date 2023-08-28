@@ -39,7 +39,7 @@ module.exports = (injectedStore) => {
   };
 
   const follow = (from, to) => {
-    return store.upsert(TABLE + '_follow',{
+    return store.upsert(TABLE + '_follow', {
       user_from: from,
       user_to: to
     })
@@ -52,7 +52,7 @@ module.exports = (injectedStore) => {
 
     return await store.query(TABLE + '_follow', query, join)
   }
- 
+
   return {
     list,
     get,

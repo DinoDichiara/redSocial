@@ -24,9 +24,9 @@ const remove = (tabla, id) => true;
 
 const query = async (tabla, q) => {
   const col = await list(tabla)
-  const  keys = Object.keys(q)
-  const key = keys[0] 
-  return col.filter(item => item[key] === q[key]) [0] || null
+  const keys = Object.keys(q)
+  const key = keys[0]
+  return col.filter(item => item[key] === q[key])[0] || null
 }
 
 module.exports = {

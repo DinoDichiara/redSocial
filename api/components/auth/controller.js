@@ -1,5 +1,5 @@
-const bcrypt = require("bcrypt");
-const auth = require("../../../auth");      
+const bcrypt = require('bcryptjs')
+const auth = require("../../../auth");
 
 const TABLE = "auth";
 
