@@ -1,17 +1,16 @@
 {
   "version": 2,
   "env": {
-    "NODE_ENV": "production",
-    "MYSQL_HOST": "@mysql_host",
-    "MYSQL_USER": "@mysql_user",
-    "MYSQL_PASS": "@mysql_pass",
-    "MYSQL_DB": "@mysql_db",
-    "MYSQL_SRV_HOST": "@mysql_srv_host",
-    "MYSQL_SRV_PORT": "@mysql_srv_port",
-    "POST_PORT": "@post_port",
-    "JWT_SECRET": "@jwt_secret",
-    "REMOTE_DB": "@remote_db",
-    "API_PORT": "@api_port"
+    "MYSQL_HOST": "localhost",
+    "MYSQL_USER": "dinodichiara",
+    "MYSQL_PASSWORD": "MiServer123",
+    "MYSQL_DB": "redsocial",
+    "MYSQL_SRV_HOST": "localhost",
+    "MYSQL_SRV_3001": "3001",
+    "POST_PORT": "3002",
+    "JWT_SECRET": "notesecret",
+    "REMOTE_DB": "false",
+    "API_PORT": "3000"
   },
   "routes": [
     {
